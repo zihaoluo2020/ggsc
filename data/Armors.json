@@ -1,0 +1,13 @@
+[
+null,
+{"id":1,"atypeId":1,"description":"充气泡沫制成的盾牌 硬度可想而知","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":128,"name":"泡沫之盾","note":"","params":[20,0,0,1,0,0,0,0],"price":60},
+{"id":2,"atypeId":1,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":130,"name":"帽子","note":"","params":[0,0,0,10,0,0,0,0],"price":300},
+{"id":3,"atypeId":1,"description":"","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":135,"name":"衣服","note":"","params":[0,0,0,10,0,0,0,0],"price":300},
+{"id":4,"atypeId":1,"description":"提供少量法力值和有效控制减免","etypeId":5,"traits":[{"code":22,"dataId":1,"value":0},{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0},{"code":13,"dataId":10,"value":0.7},{"code":13,"dataId":8,"value":0.7},{"code":13,"dataId":6,"value":0.5}],"iconIndex":145,"name":"月烧血戒","note":"","params":[0,30,0,0,0,0,0,0],"price":150},
+{"id":5,"atypeId":1,"description":"教主意志凝结成的盾牌\n以封印全部魔法为代价 提供较高的防御属性 并获得必杀技 结姻","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0},{"code":43,"dataId":23,"value":1},{"code":42,"dataId":1,"value":1},{"code":41,"dataId":2,"value":1}],"iconIndex":128,"name":"教主意志","note":"","params":[100,0,0,9,0,7,0,0],"price":200},
+{"id":6,"atypeId":1,"description":"有效减少冰系技能的伤害\n并降低冻伤概率","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0},{"code":11,"dataId":3,"value":0.75},{"code":11,"dataId":1,"value":1},{"code":13,"dataId":13,"value":0.5}],"iconIndex":130,"name":"防寒帽","note":"","params":[0,0,0,5,0,5,0,-1],"price":300},
+{"id":7,"atypeId":1,"description":"降低被控制和属性下降的概率","etypeId":4,"traits":[{"code":13,"dataId":17,"value":0.2},{"code":12,"dataId":5,"value":0.2},{"code":12,"dataId":3,"value":0.2}],"iconIndex":135,"name":"防尘服","note":"","params":[0,0,0,4,0,5,0,0],"price":200},
+{"id":8,"atypeId":1,"description":"提升防御的效果","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0},{"code":23,"dataId":1,"value":2}],"iconIndex":138,"name":"厚实的皮大衣","note":"","params":[0,0,0,9,0,7,0,0],"price":300},
+{"id":9,"atypeId":0,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0},
+{"id":10,"atypeId":0,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0}
+]
