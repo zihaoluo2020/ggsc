@@ -12,7 +12,6 @@ if(origin.luk>=5){
 user._stockpile = Math.min(user._stockpile, 16);}
 else{user._stockpile = Math.min(user._stockpile, 8);}
 
-
 user.setStateCounter(31, user._stockpile);
 // </Custom Apply Effect>
 
@@ -31,9 +30,7 @@ origin.startDamagePopup();
 {/* <Custom Respond Effect> */}
 if(origin.luk>=6&&origin.isAlive()){
 if(target.hp===0){
-addpile=target._stockpile
-target._stockpile = 0;
-target.setStateCounter(31, target._stockpile);
+
 target.removeState(31);
 
 if(user.isEnemy()){allies=$gameParty}
