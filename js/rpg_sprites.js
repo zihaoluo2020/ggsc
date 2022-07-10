@@ -451,7 +451,7 @@ Sprite_Character.prototype.isBalloonPlaying = function() {
 
 function Sprite_Battler() {
     this.initialize.apply(this, arguments);
-}
+};
 
 Sprite_Battler.prototype = Object.create(Sprite_Base.prototype);
 Sprite_Battler.prototype.constructor = Sprite_Battler;
