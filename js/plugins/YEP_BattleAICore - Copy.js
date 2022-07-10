@@ -930,7 +930,6 @@ AIManager.getActionGroup = function() {
 
 AIManager.setActionGroup = function(group) {
   this._setActionGroup = group;
-  
 };
 
 AIManager.setProperTarget = function(group) {
@@ -955,8 +954,7 @@ AIManager.setProperTarget = function(group) {
       if (param === 12) return this.setHighestLevelTarget(group);
       if (param === 13) return this.setHighestMaxTpTarget(group);
       if (param === 14) return this.setHighestTpTarget(group);
-      if (param === 15) return this.setHighestCoreTarget(group);
-      if (param > 16) return action.setTarget(randomTarget.index());
+      if (param > 15) return action.setTarget(randomTarget.index());
       this.setHighestParamTarget(group, param);
     } else if (line.match(/LOWEST[ ](.*)/i)) {
       var param = this.getParamId(String(RegExp.$1));
@@ -968,8 +966,7 @@ AIManager.setProperTarget = function(group) {
       if (param === 12) return this.setLowestLevelTarget(group);
       if (param === 13) return this.setLowestMaxTpTarget(group);
       if (param === 14) return this.setLowestTpTarget(group);
-      if (param === 15) return this.setLowestCoreTarget(group);
-      if (param > 16) return action.setTarget(randomTarget.index());
+      if (param > 15) return action.setTarget(randomTarget.index());
       this.setLowestParamTarget(group, param);
     } else {
       this.setRandomTarget(group);
@@ -1037,51 +1034,8 @@ AIManager.getParamId = function(string) {
     case 'TP':
       return 14;
       break;
-    case 'CORE':
-      return 15;
-      break;
     }
     return -1;
-};
-
-
-AIManager.setHighestCoreTarget = function(group) {
-  healers = [41,47];
-  assas = [45,48];
-
-  var maintarget = group[Math.floor(Math.random() * group.length)];
-  var hScore = 0;
-  for (var i = 0; i < group.length; ++i) {
-    var target = group[i];
-    var score = Math.max(target.atk,target.mat, target.def, target.mdf);
-    
-    //console.log(target._enemyId);
-    if(healers.contains(target._enemyId)) score = score * 2;
-    if(assas.contains(target._enemyId)) score = score / 1.5;
-    
-    score = score * (1.5 - target.hp / target.mhp);
-    //console.log(score);
-    if (score > hScore) {
-      maintarget = target;
-      hScore = score;
-    }
-  }
-  
-  this.action().setTarget(maintarget.index())
-};
-
-AIManager.setLowestCoreTarget = function(group) {
-  var maintarget = group[Math.floor(Math.random() * group.length)];
-  var lScore = 99999;
-  for (var i = 0; i < group.length; ++i) {
-    var target = group[i];
-    var score = Math.max(target.atk,target.mat);
-    if (score < lScore) {
-      maintarget = target;
-      lScore = score;
-    }
-  }
-  this.action().setTarget(maintarget.index())
 };
 
 AIManager.setHighestHpRateTarget = function(group) {
